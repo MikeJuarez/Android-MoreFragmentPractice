@@ -1,38 +1,39 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/layout_border"
     android:layout_width="200dp"
     android:layout_height="match_parent"
     tools:context=".Fragment1"
+    tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:background="@android:color/background_dark">
 
     <EditText
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="42dp"
-        android:text="Enter text here"
-        tools:text="Enter text here"
-        android:inputType="phone"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"/>
+        android:layout_marginTop="8dp"
+        android:inputType="phone"
+        android:text="Enter text here"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Enter text here"
+        android:textColor="#FFFF"/>
 
     <Button
         android:id="@+id/button1"
-        android:text="Transfer To B"
         android:layout_width="168dp"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"/>
+        android:layout_marginTop="8dp"
+        android:text="Transfer To B"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -42,5 +43,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FFFF"/>
 </android.support.constraint.ConstraintLayout>
